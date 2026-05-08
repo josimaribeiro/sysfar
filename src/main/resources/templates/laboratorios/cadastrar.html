@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Cadastrar Laboratório</title>
+</head>
+<body>
+<div layout:fragment="conteudo">
+    <h2>Cadastrar Laboratório</h2>
+    <form th:action="@{/laboratorios/cadastrar}" th:object="${laboratorio}" method="post">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" th:field="*{nome}" class="form-control"   autofocus required/>
+            <div class="text-danger" th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></div>
+        </div>
+
+		
+		<div class="mb-3">
+		    <label for="razao" class="form-label">Razao Social</label>
+		    <input type="text" th:field="*{razao}" class="form-control" />
+		    <div class="text-danger" th:if="${#fields.hasErrors('razao')}" th:errors="*{razao}"></div>
+		</div>
+				
+		
+		<div class="mb-3">
+		    <label for="fone" class="form-label">Telefone</label>
+		    <input type="text" th:field="*{fone}" class="form-control" />
+		    <div class="text-danger" th:if="${#fields.hasErrors('fone')}" th:errors="*{fone}"></div>
+		</div>
+
+        <div class="mb-3">
+            <label for="cnpj" class="form-label">CNPJ</label>
+            <input type="text" th:field="*{cnpj}" class="form-control"/>
+            <div class="text-danger" th:if="${#fields.hasErrors('cnpj')}" th:errors="*{cnpj}"></div>
+        </div>
+
+        <div class="mb-3">
+            <label for="cidade" class="form-label">Cidade</label>
+            <input type="text" th:field="*{cidade}" class="form-control"/>
+            <div class="text-danger" th:if="${#fields.hasErrors('cidade')}" th:errors="*{cidade}"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+</div>
+</body>
+</html>

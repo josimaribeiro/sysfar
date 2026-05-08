@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Consultar Laboratórios</title>
+</head>
+<body>
+<div layout:fragment="conteudo">
+    <h2>Lista de Laboratórios</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+			<th>Telefone</th>
+            <th>CNPJ</th>
+            <th>Cidade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="lab : ${laboratorios}">
+            <td th:text="${lab.cdLaboratorio}"></td>
+            <td th:text="${lab.nome}"></td>
+			<td th:text="${lab.fone}"></td>
+            <td th:text="${lab.cnpj}"></td>
+            <td th:text="${lab.cidade}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
