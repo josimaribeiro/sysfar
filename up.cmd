@@ -49,7 +49,9 @@ REM === Verifica se origin existe ===
 git remote -v | find "origin" >nul
 if %errorlevel% neq 0 (
     echo Adicionando remote origin da conta pessoal...
-    git remote add origin git@github.com:Prof-Josimar/sysfar.git
+    ::git remote add origin git@github.com-diario:Prof-Josimar/sysfar.git
+	git remote set-url origin git@github.com-diario:Prof-Josimar/sysfar.git
+
 )
 
 REM === Git ===
