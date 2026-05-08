@@ -8,7 +8,7 @@ set "author=Josimar Ribeiro"
 set "save_path=%CD%"
 set "date_time=%DATE% %TIME%"
 
-set "logo_url2=https://github.com/josimaribeiro/ciep_spring/blob/main/src/main/resources/static/IMG-INF/spring.png"
+set "logo_url2=https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/310597043/original/d3aa29b66783cc7d6e28fd86b4818742dbbf8f68/develop-spring-boot-web-application-with-spring-security-thymleaf-mysql.png"
 
 set "filename=README.md"
 
@@ -62,7 +62,7 @@ git push -u origin main
 
 :fim
 
-::start https://github.com/josimaribeiro/ciep_spring
+start https://github.com/Prof-Josimar/sysfar
 ::git remote add origin git@github.com:Prof-Josimar/sysfar.git
 
 
