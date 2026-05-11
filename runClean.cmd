@@ -1,7 +1,4 @@
-mvn clean package
+@echo off
+call mvnw clean package
+java -jar target\app.jar --spring.profiles.active=dev --logging.level.root=DEBUG
 
-
-call mvnw clean install
-
-mvnw spring-boot:run  -X
-::java -jar target\app.jar --spring.profiles.active=dev --logging.level.root=DEBUG

@@ -1,7 +1,7 @@
 # Sys Farmax 
  
 ## Informações do sistema 
-- Data e hora: 11/05/2026 13:01:58,79 
+- Data e hora: 11/05/2026 13:30:10,13 
 - Usuário: admin 
 - Computador: FE16 
 - Diretório atual: C:\Users\admin\Documents\workspace-spring-tools-for-eclipse-5.0.1.RELEASE\sysfar 
