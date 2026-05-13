@@ -1,7 +1,7 @@
 # Sys Farmax 
  
 ## Informações do sistema 
-- Data e hora: 13/05/2026 13:06:45,26 
+- Data e hora: 13/05/2026 13:26:48,95 
 - Usuário: admin 
 - Computador: ACER-LAP 
 - Diretório atual: C:\dev\java\sysfar 
