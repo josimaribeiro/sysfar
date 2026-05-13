@@ -2,12 +2,10 @@ package br.com.sistema.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.PrePersist;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -17,34 +15,29 @@ public class Licenca {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String dataAutenticacaoCriptografada;
+    // Data da última execução do sistema
+    @Column(name = "data_ultima_execucao")
+    private LocalDate dataUltimaExecucao;
 
+    // Data da última autenticação válida
+    @Column(name = "data_autenticacao", nullable = false)
+    private LocalDate dataAutenticacao;
+
+    // Criado automaticamente na primeira vez
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    // Construtor vazio exigido pelo JPA
     public Licenca() {}
-    
-    @PrePersist
-    protected void onCreate() {
-        this.createdAt = LocalDateTime.now();
-    }
 
-    // Getter e Setter para dataAutenticacaoCriptografada
-    public String getDataAutenticacaoCriptografada() {
-        return dataAutenticacaoCriptografada;
-    }
+    // Getters e Setters
+    public Long getId() { return id; }
 
-    public void setDataAutenticacaoCriptografada(String dataAutenticacaoCriptografada) {
-        this.dataAutenticacaoCriptografada = dataAutenticacaoCriptografada;
-    }
+    public LocalDate getDataUltimaExecucao() { return dataUltimaExecucao; }
+    public void setDataUltimaExecucao(LocalDate dataUltimaExecucao) { this.dataUltimaExecucao = dataUltimaExecucao; }
 
-    // Getter e Setter para createdAt
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
+    public LocalDate getDataAutenticacao() { return dataAutenticacao; }
+    public void setDataAutenticacao(LocalDate dataAutenticacao) { this.dataAutenticacao = dataAutenticacao; }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 }
