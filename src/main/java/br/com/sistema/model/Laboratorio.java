@@ -5,6 +5,11 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 
 @Entity
 @Table(name = "laboratorios")
@@ -64,6 +69,16 @@ public class Laboratorio {
 	@Column(name = "enviado")
 	private String enviado;
 
+	
+	@CreationTimestamp
+	@Column(name = "created_at", updatable = false)
+	private LocalDateTime createdAt;
+
+	@UpdateTimestamp
+	@Column(name = "updated_at")
+	private LocalDateTime updatedAt;
+
+	
 	public Long getCdLaboratorio() {
 		return cdLaboratorio;
 	}

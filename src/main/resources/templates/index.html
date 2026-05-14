@@ -9,6 +9,12 @@
     <div layout:fragment="conteudo">
         <h1>Bem-vindo ao sistema!</h1>
         <p>Esta é a página inicial.</p>
+
+        <!-- Exibir data/hora de execução -->
+        <p th:if="${logExecucao != null}">
+            Última execução: 
+            <span th:text="${#temporals.format(logExecucao.dataHora, 'dd/MM/yyyy HH:mm:ss')}"></span>
+        </p>
     </div>
 </body>
 </html>
