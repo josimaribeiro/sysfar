@@ -53,8 +53,122 @@ public class Clientes {
     @Column(name = "STATUS", length = 1)
     private String status;
 
+	public Double getCdCliente() {
+		return cdCliente;
+	}
+
+	public void setCdCliente(Double cdCliente) {
+		this.cdCliente = cdCliente;
+	}
+
+	public Double getCdVendedor() {
+		return cdVendedor;
+	}
+
+	public void setCdVendedor(Double cdVendedor) {
+		this.cdVendedor = cdVendedor;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void setUf(String uf) {
+		this.uf = uf;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public Date getDataFicha() {
+		return dataFicha;
+	}
+
+	public void setDataFicha(Date dataFicha) {
+		this.dataFicha = dataFicha;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Double getRenda() {
+		return renda;
+	}
+
+	public void setRenda(Double renda) {
+		this.renda = renda;
+	}
+
+	public Double getLimiteCredito() {
+		return limiteCredito;
+	}
+
+	public void setLimiteCredito(Double limiteCredito) {
+		this.limiteCredito = limiteCredito;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
     
     
+    
+
     
     
     
