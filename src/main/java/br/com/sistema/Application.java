@@ -10,7 +10,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan(basePackages = "br.com.sistema.model")
 public class Application {
     public static void main(String[] args) {
+        
+        System.out.println("🚀 Iniciando a aplicação Sysfar...");
+        
         SpringApplication.run(Application.class, args);
+        
+        System.out.println("✅ Aplicação Sysfar iniciada com sucesso!");
+        	
     }
 }
 
