@@ -1,7 +1,7 @@
 # Sys Farma (em inicio de desenvolvimento) 
  
 ## Informações do sistema 
-- Data e hora: 16/05/2026 17:30:41,73 
+- Data e hora: 16/05/2026 17:32:00,60 
 - Usuário: admin 
 - Computador: ACER-LAP 
 - Diretório atual: C:\dev\java\sysfar 
